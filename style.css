@@ -10,18 +10,50 @@ html{
 
 body{
     font-family:'Poppins', sans-serif;
-    background:#0D1117;
     color:#F0F6FC;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(46,204,113,0.12),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            rgba(46,204,113,0.08),
+            transparent 20%
+        ),
+
+        #0D1117;
+
+    background-image:
+        linear-gradient(
+            rgba(46,204,113,0.03) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(46,204,113,0.03) 1px,
+            transparent 1px
+        );
+
+    background-size:50px 50px;
 }
 
 /* NAVBAR */
 
 nav{
-    background:#161B22;
+    background:rgba(22,27,34,.85);
+    backdrop-filter:blur(12px);
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:20px 10%;
+
     position:sticky;
     top:0;
     z-index:1000;
