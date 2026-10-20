@@ -196,9 +196,12 @@ section p{
 
 /* PROJECT CARDS */
 
+
+/* PROJECT CARDS */
+
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:20px;
 }
 
@@ -207,6 +210,16 @@ section p{
     padding:30px;
     border-radius:18px;
     border:1px solid #2ECC71;
+
+    transition:.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 0 15px rgba(46,204,113,.15),
+        0 0 30px rgba(46,204,113,.08);
 }
 
 .card h3{
@@ -217,6 +230,7 @@ section p{
 .card p{
     font-size:1.15rem;
 }
+
 
 /* SKILLS */
 
@@ -320,4 +334,25 @@ footer{
     .buttons{
         justify-content:center;
     }
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(46,204,113,0.12),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at bottom left,
+            rgba(46,204,113,0.08),
+            transparent 20%
+        ),
+
+        #0D1117;
+}
 }
