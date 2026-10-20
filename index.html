@@ -1,44 +1,228 @@
-<!-- HERO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jill | Portfolio</title>
 
-<section class="hero">
+    <link rel="stylesheet" href="style.css">
 
-    <div class="hero-content">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-        <div class="hero-left">
+<body>
 
-            <h1>Hi, I'm Jill 👋</h1>
+    <!-- NAVBAR -->
 
-            <h2>Computer Engineering Student</h2>
+    <nav>
+        <h2>Jill</h2>
 
-            <p>
-                I am a 4th year Computer Engineering student with a
-                strong interest in software architecture and emerging
-                technologies. I am passionate about developing
-                innovative solutions, expanding my technical knowledge,
-                and creating technology-driven solutions to real-world
-                problems.
-            </p>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-            <div class="buttons">
+    <!-- HERO -->
 
-                <a href="#projects" class="btn-primary">
-                    🚀 Projects
-                </a>
+    <section class="hero">
 
-                <a href="#contact" class="btn-secondary">
-                    📫 Contact
-                </a>
+        <div class="hero-content">
+
+            <div class="hero-left">
+
+                <h1>Hi, I'm Jill 👋</h1>
+
+                <h2>Computer Engineering Student</h2>
+
+                <p>
+                    Aspiring software developer with a passion for software architecture,
+                    innovation, and emerging technologies.
+                </p>
+
+                <div class="buttons">
+                    <a href="#projects" class="btn-primary">🚀 Projects</a>
+                    <a href="#contact" class="btn-secondary">📫 Contact</a>
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <!-- PUT YOUR PHOTO INSIDE images FOLDER -->
+
+                <img src="images/jill.jpg" alt="Jill Portfolio Image">
 
             </div>
 
         </div>
 
-        <div class="hero-right">
+    </section>
 
-            <img src="images/jill.jpg" alt="Jill">
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>📝 About Me</h2>
+
+        <p>
+            I am a 4th year Computer Engineering student with a strong
+            interest in software architecture and emerging technologies.
+            I am passionate about developing innovative solutions,
+            expanding my technical knowledge, and creating
+            technology-driven solutions to real-world problems.
+        </p>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>🚀 Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>💊 Intelligent Medication Dispenser</h3>
+
+                <p>
+                    An intelligent medication management system designed
+                    to improve medication adherence through automated
+                    dispensing, scheduling, and monitoring features.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>🗺️ TourMana PH</h3>
+
+                <p>
+                    TourMana PH is a web-based platform that promotes
+                    Philippine tourism and preserves Filipino heritage by
+                    showcasing tourist attractions, providing destination
+                    information, and allowing users to suggest new places
+                    for administrator approval.
+                </p>
+
+            </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>🛠 Skills & Tools</h2>
+
+        <div class="skills">
+
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Figma</span>
+
+        </div>
+
+    </section>
+
+    <!-- GITHUB STATS -->
+
+    <section>
+
+        <h2>📊 GitHub Stats</h2>
+
+        <div class="github-stats">
+
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=jillyown3&show_icons=true&theme=merko"
+                alt="GitHub Stats"
+            >
+
+        </div>
+
+    </section>
+
+    <!-- MUSIC -->
+
+    <section id="music">
+
+        <h2>🎵 Currently Vibing To</h2>
+
+        <div class="music-card">
+
+            <iframe
+                style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/5mtTAScDytxMMqZj14NmlN?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>📫 Contact</h2>
+
+        <div class="contact-card">
+
+            <p>
+                📧
+                <a href="mailto:jillianneparambita@gmail.com">
+                    jillianneparambita@gmail.com
+                </a>
+            </p>
+
+            <p>
+                🐙
+                <a href="https://github.com/jillyown3" target="_blank">
+                    github.com/jillyown3
+                </a>
+            </p>
+
+            <p>
+                📘
+                <a href="https://facebook.com/jilliayayaya" target="_blank">
+                    facebook.com/jilliayayaya
+                </a>
+            </p>
+
+            <p>
+                📸
+                <a href="https://instagram.com/jilliempo" target="_blank">
+                    instagram.com/jilliempo
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>🌿 Built by Jill</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
