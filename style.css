@@ -292,15 +292,37 @@ section p{
     font-size:1.1rem;
 }
 
-/* GITHUB */
 
-.github-stats{
-    display:flex;
-    justify-content:center;
+/* GITHUB STATS */
+
+.github-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 35px auto 55px;
 }
 
-.github-stats img{
-    max-width:100%;
+.github-stats img {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    border-radius: 14px;
+    border: 1px solid rgba(46, 204, 113, 0.35);
+
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.github-stats img:hover {
+    transform: translateY(-5px);
+    border-color: #2ECC71;
+    box-shadow: 0 0 28px rgba(46, 204, 113, 0.18);
 }
 
 /* MUSIC */
